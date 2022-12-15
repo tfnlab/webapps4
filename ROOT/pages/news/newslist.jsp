@@ -204,7 +204,11 @@
       // Loop through the sorted files array and print the names and creation dates of the files
       for (File file : files) {
     %>
-    <li><a href=published/<%= file.getName() %> ><%= file.getName().replace("_", " ").replace(".html", "") %></a> - <%= new Date(file.lastModified()) %></li>
+    <li><a href=published/<%= file.getName() %> ><%= file.getName().replace("_", " ").replace(".html", "") %></a>
+        <BR>
+        <hr style="border-color: lightblue;">
+
+     <%= new Date(file.lastModified()) %></li>
     <%
       }
     %>
