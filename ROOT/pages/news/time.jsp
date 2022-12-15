@@ -13,4 +13,4 @@ Date now = new Date();
 
 // Format the date and time
 String formattedDate = dateFormat.format(now);
-%>
+%><%=formattedDate%>
