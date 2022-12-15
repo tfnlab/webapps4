@@ -163,38 +163,6 @@
         </div>
         <div class="contact-wrap">
           <div class="row">
-            <div class="col-lg-6  mb-5 mb-sm-2">
-              <div class="position-relative image-hover">
-                <img
-                  src="images/<BL-IMG>"
-                  class="img-fluid"
-                  alt="world-news"
-                />
-              </div>
-            </div>
-            <div class="col-lg-6 mb-2 mb-lg-2">
-              <div class="row">
-                <div class="col-sm-12  mb-2 mb-lg-2">
-                  <h1>BY <BL-AUTH></h1>
-                  <p class="mb-3">
-                    <BL-DATE>
-                  </p>
-                  <p class="mb-4">
-                    <BL-P>
-                  </p>
-                  <!--
-                  <p class="mb-4">
-                    The new location will be situated in a prime spot in the heart of Burbank, making it easily accessible for residents and visitors alike. The restaurant will feature the same menu as the original location, offering a wide variety of tasty dishes to choose from.
-                  </p>
-                  <p class="fs-15 font-weight-600">
-                    VIEW MORE INFORMATION <a href="https://burbanklive.com">burbanklive.com</a>
-                  </p>
-                  -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
             <div class="col-lg-12  mb-4 mb-lg-4">
               <p class="fs-15 font-weight-normal mb-4 mt-5">
                   <BL-P-LOW>
