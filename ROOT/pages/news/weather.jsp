@@ -25,16 +25,14 @@
    reader.close();
 
    // Parse the response as a JSON object
-   JSONObject json = new JSONObject(responseJson);
+//   JSONObject json = new JSONObject(responseJson);
 
-   // Get the weather data from the JSON object
-   JSONObject weatherData = json.getJSONArray("weather").getJSONObject(0);
-   String description = weatherData.getString("description");
-   double temperature = json.getJSONObject("main").getDouble("temp");
+   // Get the weather data from the JSON object/
+//   JSONObject weatherData = json.getJSONArray("weather").getJSONObject(0);
+//   String description = weatherData.getString("description");
+//   double temperature = json.getJSONObject("main").getDouble("temp");
 
    // Print the weather data
    %>
-   <%="Current weather in " + city + ": "%>
-   <%="Description: " + description%>
-   <%="Temperature: " + temperature + "F"%>
+   <%=responseJson%>
 sss
