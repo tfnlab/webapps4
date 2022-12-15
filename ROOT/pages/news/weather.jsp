@@ -36,6 +36,6 @@
 
    // Print the weather data
    %>
-   <%="Current weather in " + city + ": ")%>
-   <%="Description: " + description)%>
-   <%="Temperature: " + temperature + "F")%>
+   <%="Current weather in " + city + ": "%>
+   <%="Description: " + description%>
+   <%="Temperature: " + temperature + "F"%>
