@@ -207,8 +207,10 @@
     <li><a href=published/<%= file.getName() %> ><%= file.getName().replace("_", " ").replace(".html", "") %></a>
         <BR>
         <hr style="border-color: lightblue;">
-
-     <%= new Date(file.lastModified()) %></li>
+        <%= new Date(file.lastModified()) %>
+        <hr style="border-color: black;">
+        <BR><BR>
+     </li>
     <%
       }
     %>
