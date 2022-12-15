@@ -58,7 +58,7 @@
               <div class="d-flex justify-content-between align-items-center navbar-top">
                 <ul class="navbar-left">
                   <li name="currentTime" id="currentTime"></li>
-                  <li>30°C,London</li>
+                  <li>Burbank CA, USA</li>
                 </ul>
                 <div>
                   <a class="navbar-brand" href="#"
