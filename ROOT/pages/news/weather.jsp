@@ -17,15 +17,15 @@
 
    // Open a connection to the URL and read the response
    BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
-   String response = "";
+   String responseJson = "";
    String line;
    while ((line = reader.readLine()) != null) {
-      response += line;
+      responseJson += line;
    }
    reader.close();
 
    // Parse the response as a JSON object
-   JSONObject json = new JSONObject(response);
+   JSONObject json = new JSONObject(responseJson);
 
    // Get the weather data from the JSON object
    JSONObject weatherData = json.getJSONArray("weather").getJSONObject(0);
