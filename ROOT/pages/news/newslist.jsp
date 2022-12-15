@@ -210,7 +210,7 @@
 
     // Loop through the files and print their names
     for (File file : files) {
-      out.println(file.getName() + "<br>");
+       out.println("<a href=published/" + file.getName() + " >" + file.getName() + </a> + "<br>");
     }
   %>
 
