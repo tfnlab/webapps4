@@ -349,5 +349,6 @@
     <!-- Custom js for this page-->
     <script src="../../../assets/js/demo.js"></script>
     <!-- End custom js for this page-->
+    <loaded>
   </body>
 </html>
