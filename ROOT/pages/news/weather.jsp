@@ -33,7 +33,7 @@
    double temperature = json.getJSONObject("main").getDouble("temp");
 
    // Print the weather data
-   out.println("Current weather in " + city + ": ");
-   out.println("Description: " + description);
-   out.println("Temperature: " + temperature + "F");
-%>
+   %>
+   <%="Current weather in " + city + ": ")%>
+   <%="Description: " + description)%>
+   <%="Temperature: " + temperature + "F")%>
