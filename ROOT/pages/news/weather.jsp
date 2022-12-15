@@ -11,8 +11,9 @@
    String countryCode = "CA";
 
    // Construct the URL for the OpenWeatherMap API
-   String urlString = "http://api.openweathermap.org/data/2.5/weather?" +
-                      "q=" + city + "," + countryCode + "&units=imperial&appid=" + apiKey;
+   // onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
+   String urlString = "http://api.openweathermap.org/data/3.0/onecall?" +
+                      "lat=34.1808&lon=118.3090&appid=" + apiKey;
    URL url = new URL(urlString);
 
    // Open a connection to the URL and read the response
