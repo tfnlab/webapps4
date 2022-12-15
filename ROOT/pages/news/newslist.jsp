@@ -30,10 +30,25 @@
     <link rel="shortcut icon" href="../../../assets/images/favicon.png" />
     <!-- inject:css -->
     <link rel="stylesheet" href="../../../assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- endinject -->
+    <script>
+      function loadData() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("currentTime").innerHTML = this.responseText;
+          }
+        };
+        var urlString = "time.jsp";
+        xhttp.open("GET", urlString, true);
+        xhttp.send();
+
+      }
+    </script>
   </head>
 
-  <body>
+  <body onload="loadData()">
     <ul class="container-scroller">
       <header id="header">
         <ul class="container">
@@ -41,7 +56,7 @@
           <nav class="navbar navbar-expand-lg navbar-light">
               <div class="d-flex justify-content-between align-items-center navbar-top">
                 <ul class="navbar-left">
-                  <li>Wed, March 4, 2020</li>
+                  <li name="currentTime" id="currentTime"></li>
                   <li>30°C,London</li>
                 </ul>
                 <div>
