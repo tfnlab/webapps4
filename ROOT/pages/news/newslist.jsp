@@ -170,21 +170,6 @@
             <div class="col-lg-12  mb-4 mb-lg-4">
               <p class="fs-15 font-weight-normal mb-4 mt-5">
                   <BL-P-LOW>
-                    <%
-    // Get the directory path from the request parameter
-    String directoryPath = "/var/lib/tomcat9/webapps4/ROOT/pages/news/published";
-
-    // Create a File object for the directory
-    File directory = new File(directoryPath);
-
-    // Get a list of files in the directory
-    File[] files = directory.listFiles();
-
-    // Loop through the files and print their names
-    for (File file : files) {
-       out.println("<a href=published/" + file.getName() + " >" + file.getName().replace("_", " ") + "</a><br><hr width=\"100%\" color=\"blue\">");
-    }
-  %>
 
 
   <%
@@ -218,7 +203,7 @@
       // Loop through the sorted files array and print the names and creation dates of the files
       for (File file : files) {
     %>
-    <li><%= file.getName() %> - <%= new Date(file.lastModified()) %></li>
+    <li><a href=published/<%= file.getName() %> ><%= file.getName() %></a> - <%= new Date(file.lastModified()) %></li>
     <%
       }
     %>
