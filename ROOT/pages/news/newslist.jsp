@@ -170,7 +170,7 @@
             <div class="col-lg-12  mb-4 mb-lg-4">
               <p class="fs-15 font-weight-normal mb-4 mt-5">
                   <BL-P-LOW>
-                  
+
 
 
   <%
@@ -204,7 +204,7 @@
       // Loop through the sorted files array and print the names and creation dates of the files
       for (File file : files) {
     %>
-    <li><a href=published/<%= file.getName() %> ><%= file.getName().replace("_", " ") %></a> - <%= new Date(file.lastModified()) %></li>
+    <li><a href=published/<%= file.getName() %> ><%= file.getName().replace("_", " ").replace(".html", "") %></a> - <%= new Date(file.lastModified()) %></li>
     <%
       }
     %>
