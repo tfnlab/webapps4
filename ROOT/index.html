@@ -25,9 +25,23 @@
     <!-- inject:css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- endinject -->
+    <script>
+      function loadData() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("currentTime").innerHTML = this.responseText;
+          }
+        };
+        var urlString = "pages/news/time.jsp";
+        xhttp.open("GET", urlString, true);
+        xhttp.send();
+
+      }
+    </script>
   </head>
 
-  <body>
+  <body onload="loadData()">
     <div class="container-scroller">
       <div class="main-panel">
         <header id="header">
@@ -37,7 +51,7 @@
               <div class="d-flex justify-content-between align-items-center navbar-top">
                 <ul class="navbar-left">
                   <li>Wed, Dec 14, 2022</li>
-                  <li>30°C,London</li>
+                  <li>Burbank, CA</li>
                 </ul>
                 <div>
                   <a class="navbar-brand" href="#"
@@ -873,6 +887,6 @@
       gtag('js', new Date());
 
       gtag('config', 'G-QFJYGDY7F2');
-    </script>      
+    </script>
   </body>
 </html>
